@@ -1,7 +1,6 @@
 import React from 'react';
 
 const PokemonSelector = (props) => {
-  console.log(props.pokemons);
   function handleChange(event){
     props.onPokemonSelected(event.target.value);
   }

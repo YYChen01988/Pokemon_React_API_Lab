@@ -19,11 +19,11 @@ class PokemonContainer extends React.Component {
     .then((pokemons) => {
       this.setState({pokemons: pokemons});
     })
-    
+
   }
 
   handlePokemonSelected(index){
-    const pokemon = this.state.pokemons[index];
+    const pokemon = this.state.pokemons.results[index];
     this.setState({currentPokemon: pokemon});
   }
 
